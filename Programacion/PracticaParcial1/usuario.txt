@@ -1,0 +1,1 @@
+a:2:{i:0;O:7:"Usuario":6:{s:2:"id";i:1;s:6:"nombre";s:3:"ej1";s:3:"dni";s:4:"4090";s:10:"obraSocial";s:4:"osde";s:5:"clave";s:3:"123";s:4:"tipo";s:3:"adm";}i:1;O:7:"Usuario":6:{s:2:"id";i:2;s:6:"nombre";s:3:"ej2";s:3:"dni";s:5:"40901";s:10:"obraSocial";s:6:"sarasa";s:5:"clave";s:3:"123";s:4:"tipo";s:3:"adm";}}

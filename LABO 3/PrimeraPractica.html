@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script type = "text/javascript">
+    var http = new XMLHttpRequest;
+    window.onload=function(){
+        var btnEnviar = document.getElementById("btnEnviar");
+        btnEnviar.onclick = function(){
+            var user = document.getElementById("user");
+            var pass = document.getElementById("pass");
+            http.onreadystatechange = callback;
+            http.open("GET","http://localhost:3000/loginUsuario?usr="+user+"&pass="+pass,true);
+        }
+        var asd = document.getElementById("user");
+        console.log(asd.name);
+    }
+    function callback(){
+        if(http.readyState == 4 && http.status == 200){
+            alert(http.responseText);
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- action="login.php" en el form para poner a que ruta ir -->
+    <form  method="GET">
+    Usuario<br>
+    <input type="label" id="user"><br>
+    Contraseña:<br>
+    <input type="password" id="pass"><br>
+    <input type="checkbox"> Recordar user y Contraseña
+    <input type="submit" value="Enviar" id="btnEnviar"> <input type="reset" value ="Limpiar">
+
+
+    <!-- <a href="./index.html">link    </a>   esto para agregar un link -->
+    <table border = "1"> 
+        <tr>
+            <th>Nombre </th>    
+            <th>Apellido </th>
+        </tr>
+        <tr>
+            <td>luciano        </td>   
+            <td>gil         </td>
+        </tr>
+    </table>
+    <audio controls> 
+        <source src="./ruta.mp3">
+    </audio>
+    <video controls>
+        <source src="./rutaVideo.mp4">
+    </video>
+</body>
+</form>
+</html>

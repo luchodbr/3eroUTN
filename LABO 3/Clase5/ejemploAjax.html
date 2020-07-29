@@ -1,0 +1,32 @@
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>type="text/javascript"
+            var http = new XMLHttpRequest();
+
+            //readystate 1 --- llego la peticion get al servidor osea se pudo hacer open
+            // ready 2 -- se esta procesando la respuesta
+            //ready 3 -- esta lista la resp
+            //ready 4 -- ya llego la resp
+            http.onreadystatechange = function(){
+                console.log("llego respuesta",http.readyState);
+                if(http.readyState===4){
+                    if(http.status===200){
+                        console.log("Tenemos un 200");
+                     //   document.write(http.responseText);
+                    }else{
+                        console.log("tenemos un error");
+                    }
+                    
+                }
+            }
+
+            http.open("GET","http://localhost:3000/loginUsuario?usr="+document.getElementById(usr)+"&pass="+document.getElementById(pass),true);
+            http.send();
+            console.log("termino llamada");
+
+        </script>
+    </head>

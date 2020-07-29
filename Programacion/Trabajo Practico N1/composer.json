@@ -1,0 +1,6 @@
+{
+    "name": "luchodbr/clasephp1",
+    "require": {
+        "namnv609/php-rest-countries": "^1.0"
+    }
+}

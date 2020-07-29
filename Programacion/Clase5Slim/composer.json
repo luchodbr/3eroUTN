@@ -1,0 +1,7 @@
+{
+    "name": "luchodbr/clase5slim",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.1"
+    }
+}

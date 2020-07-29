@@ -1,0 +1,9 @@
+{
+    "name": "luchodbr/clase7iluminate",
+    "require": {
+        "illuminate/events": "^7.15",
+        "illuminate/database": "^7.15",
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.1"
+    }
+}

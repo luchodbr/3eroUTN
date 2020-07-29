@@ -1,0 +1,6 @@
+{
+    "name": "luchodbr/practica-parcial1",
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    }
+}

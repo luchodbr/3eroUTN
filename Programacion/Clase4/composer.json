@@ -1,0 +1,6 @@
+{
+    "name": "luchodbr/clase3prof",
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    }
+}

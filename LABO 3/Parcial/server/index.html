@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src = "./clase4.js"> </script>
+    <link rel="stylesheet" href="./hojaStyleClase4.css" >  
+    <script type = "text/javascript">
+       
+    </script>
+</head>
+
+<body>
+    <div class = "bAgregar">
+        <input type ="button" value = "Agregar" onclick="contenedorAparecer()">
+    </div>
+    <div class= "loadingClass" >
+        <img id="load" src="loading.gif" hidden>
+    </div>
+    <h2></h2>
+    <div class ="container" id="containerAgregar" hidden>
+        <div class ="divCerrar">
+                <div class ="bCerrar">
+                    <input type="button" value ="bCerrar" onclick="contenedorDesaparecer()">
+                    </div>
+        </div>
+                <label for="fname">Nombre</label><br>
+                <input type = "text" id ="fname" class="sinError" name ="firstname" placeholder="ingresa tu nombre...">
+                <br>
+                <label for="lname">Apellido</label><br>
+                <input type = "text" id ="lname" class="sinError" name ="lastname" placeholder="ingresa tu Apellido...">
+                <label for="telefono">Telefono</label><br>
+                <input type = "text" id ="telefono" class="sinError" name ="telefono" placeholder="ingresa tu numero de telefono...">
+                <br>
+                <label for="fecha">Fecha</label><br>
+                <input type = "date" id ="fecha" class="sinError" name ="fecha" placeholder="ingresa tu fecha nacimiento...">
+                <!-- <div class ="bCerrar">
+                    <input type="button" value = "Guardar" onclick="agregar()">
+                    <input type="button" value = "Guardar" onclick="agregar()">
+                </div> -->
+                <div class ="bCerrar">
+                    <input type="button" value = "Modificar" id ="btnModificar" onclick="Modificar()">
+                </div>
+            
+    </div>
+        <h2>Lista de personas</h2> 
+        <table id="tabla">
+            <thead>
+                <tr>
+                   <th>Nombre</th> 
+                   <th>Apellido</th> 
+                   <th>Fecha</th> 
+                   <th>Numero</th> 
+                    <!-- <th>Accion</th>  -->
+                </tr>
+            </thead>
+            <tbody id= "tCuerpo">
+                <tr>
+                    <!-- <td>luciano </td>
+                    <td>gil </td> -->
+                    <!-- <td><a href=''>borrar</a></td> -->
+                </tr>
+                <tr>
+                    <!-- <td>mario </td>
+                    <td>bross </td> -->
+                    <!-- <td><a href=''>borrar</a></td> -->
+                </tr>
+                <tr>
+                    <!-- <td>pepe </td>
+                    <td>grillo </td> -->
+                    <!-- <td><a href=''>borrar</a></td> -->
+                </tr>
+                <tr>
+                    <!-- <td>pepe </td>
+                    <td>grillo </td> -->
+                    <!-- <td><a href=''>borrar</a></td> -->
+                </tr>
+                <tr>
+                    <!-- <td>pepe </td>
+                    <td>grillo </td> -->
+                    <!-- <td><a href=''>borrar</a></td> -->
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    <footer>
+    </footer>
+</body>

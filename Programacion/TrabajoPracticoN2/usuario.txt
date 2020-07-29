@@ -1,0 +1,1 @@
+a:2:{i:0;O:7:"Usuario":6:{s:5:"email";s:8:"juansito";s:5:"clave";s:6:"sarasa";s:6:"nombre";s:3:"luc";s:8:"apellido";s:3:"gil";s:8:"telefono";s:3:"123";s:4:"tipo";s:6:"jefazo";}i:1;O:7:"Usuario":6:{s:5:"email";s:8:"juansito";s:5:"clave";s:6:"sarasa";s:6:"nombre";s:3:"luc";s:8:"apellido";s:3:"gil";s:8:"telefono";s:3:"123";s:4:"tipo";s:6:"jefazo";}}
